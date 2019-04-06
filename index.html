@@ -24,6 +24,14 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<section data-markdown="rex_chiffrement_bdd.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+				<section data-mardown>
+					<textarea data-template>
+						       ## Ancienne manière de chiffrer
+Le chiffrement des données est fait en utilisant le bundle (bibliothèque) Symfony [nzo/url-encryptor-bundle](https://packagist.org/packages/nzo/url-encryptor-bundle) en version 3 qui s'appuie sur la bibliothèque de cryptologie [Mcrypt](https://en.wikipedia.org/wiki/Mcrypt) et donc l'extension [php-mcrypt](http://php.net/manual/fr/intro.mcrypt.php). Un des soucis majeurs concernant l'utilisation de Mcrypt est que cette bibliothèque n'est plus maintenue et comporte [des failles de sécurité](https://www.cvedetails.com/vulnerability-list/vendor_id-1643/Mcrypt.html). La communauté PHP a décidé d'arrêter le support de Mcrypt après PHP7.1
+
+					</textarea>
+				</section>
 				<section>Slide 1</section>
 				<section>Slide 2</section>
 			</div>
@@ -38,8 +46,8 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
