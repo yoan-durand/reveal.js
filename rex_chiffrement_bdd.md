@@ -1,6 +1,27 @@
-# Chiffrement de base de données
+# REX: Chiffrement de base de donnees et recherche
 
+## Yoan
 
+Follow
+
+Developpeur Back End
+Biere - Metal - PHP
+
+@yoan_durand
+@yoan-durand
+
+## DISCLAIMER
+
+TROLL INSIDE
+
+## Il etait une fois
+
+Recuperation de code de mercenaire, passage de 2.7 a 3.4 a peu pres
+Symfony 3.4 :)
+PHP 7.2 \o/
+
+Decouverte de l'utilisation du Symfony [nzo/url-encryptor-bundle](https://packagist.org/packages/nzo/url-encryptor-bundle)
+Utilisant mcrypt 
 
 ## Ancienne manière de chiffrer
 
